@@ -1,3 +1,4 @@
+package com.myjavaPack;
 
 
 import java.io.IOException;

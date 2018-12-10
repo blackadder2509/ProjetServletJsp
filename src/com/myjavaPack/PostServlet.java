@@ -1,3 +1,4 @@
+package com.myjavaPack;
 
 
 import java.io.IOException;
@@ -27,7 +28,10 @@ public class PostServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		var post = new Post(1, "test", "ok");
+		request.setAttribute("post", post);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Post/index.jsp").forward(request, response);
+	//	response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
