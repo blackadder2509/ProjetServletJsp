@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Page de test</title>
 </head>
 <body>
-
+<h1> Ma page de test...</h1>
+<p>Voyons ce que nous pouvons faire </p>
+<a href="post">To see</a>
 </body>
 </html>
